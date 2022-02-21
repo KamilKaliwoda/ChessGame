@@ -9,5 +9,5 @@
 
 ### In order to run application:
   1. Copy the repository.
-  2. Open project via QtCreator.
+  2. Open project via QtCreator (you have to choose file chess.pro).
   3. Run file main.cpp.
