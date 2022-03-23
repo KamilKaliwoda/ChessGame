@@ -5,7 +5,7 @@
 #include <array>
 #include "Types.h"
 
-// Class counter is an interface and it is in charge of contains informations about each counter types. Each derived class are a polimorfism of Counter class.
+// Class counter is an interface and it is in charge of containing information about each counter type. Each derived class are a polymorphism of the Counter class.
 
 class Counter: public QGraphicsPixmapItem, public QObject{
 public:
@@ -192,7 +192,7 @@ private:
     Counter_type counter_type;
     void set_pixmap();
     // Additional parameter whose tell if Rook is still allowed to do castling.
-    bool castling_;
+    bool castling_ = true;
 };
 
 
@@ -281,7 +281,7 @@ private:
     Counter_type counter_type;
     void set_pixmap();
     // Additional parameter whose tell if King is still allowed to do castling.
-    bool castling_;
+    bool castling_ = true;
 };
 
 #endif // COUNTER_H
